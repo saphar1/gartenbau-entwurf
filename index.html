@@ -8,6 +8,7 @@
   <!-- Demo-Entwurf: nicht indexieren -->
   <meta name="robots" content="noindex, nofollow">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -19,6 +20,7 @@
     <a class="brand" href="#top">Pawi-Gartenbau</a>
     <nav aria-label="Hauptnavigation">
       <a href="#leistungen">Leistungen</a>
+      <a href="#ablauf">Ablauf</a>
       <a href="#betrieb">Betrieb</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -27,31 +29,40 @@
   <main id="top">
 
     <section class="hero">
-      <img src="img/hero.jpg" alt="Gepflegter Garten mit Buchskugeln, Pflasterweg und Blumentöpfen" width="1600" height="1060" fetchpriority="high">
+      <img src="img/betrieb.jpg" alt="Naturnah bepflanztes Staudenbeet mit Kiesweg" width="1200" height="800" fetchpriority="high">
       <div class="hero-text">
         <p class="eyebrow">Planung u. Pflege · Zürich Höngg</p>
-        <h1>Pawi-Gartenbau</h1>
-        <p class="lead">Wir planen und pflegen Ihren Garten. Damit er das ganze Jahr gut aussieht.</p>
-        <a class="button" href="#kontakt">Jetzt anfragen</a>
+        <h1>Ein Garten, der <em>jedes Jahr</em> schöner wird.</h1>
+        <p class="lead">Pawi-Gartenbau plant und pflegt Gärten in Zürich. Persönlich und mit Blick fürs Detail.</p>
+        <div class="hero-actions">
+          <a class="button" href="#kontakt">Jetzt anfragen</a>
+          <a class="button ghost" href="tel:+41443416066">044 341 60 66</a>
+        </div>
       </div>
     </section>
 
     <section id="leistungen" class="section">
       <div class="wrap">
-        <p class="eyebrow">Leistungen</p>
-        <h2>Vom ersten Plan bis zur laufenden Pflege</h2>
+        <p class="eyebrow reveal">Leistungen</p>
+        <h2 class="reveal">Vom ersten Plan bis zur laufenden Pflege</h2>
 
         <div class="cards">
-          <article class="card">
-            <img src="img/planung.jpg" alt="Gartenweg aus Backstein zwischen Beeten und Bäumen" width="1600" height="1067" loading="lazy">
-            <h3>Gartenplanung</h3>
-            <p>Wir hören zu und schauen Ihren Garten an. Dann entsteht ein Plan, der zu Ihnen und zum Ort passt.</p>
+          <article class="card reveal">
+            <img src="img/planung.jpg" alt="Gartenweg aus Backstein zwischen Beeten und Bäumen" width="1200" height="800" loading="lazy">
+            <div class="card-body">
+              <span class="num">01</span>
+              <h3>Gartenplanung</h3>
+              <p>Wir hören zu und schauen Ihren Garten an. Dann entsteht ein Plan, der zu Ihnen und zum Ort passt.</p>
+            </div>
           </article>
 
-          <article class="card">
-            <img src="img/pflege.jpg" alt="Schubkarre auf dem Rasen neben Beeten und Sträuchern" width="1600" height="2400" loading="lazy">
-            <h3>Gartenpflege</h3>
-            <p>Wir kümmern uns regelmässig um Ihren Garten. Sie geniessen ihn, wir halten ihn in Form.</p>
+          <article class="card reveal">
+            <img src="img/pflege.jpg" alt="Schubkarre auf dem Rasen neben Beeten und Sträuchern" width="1200" height="1800" loading="lazy">
+            <div class="card-body">
+              <span class="num">02</span>
+              <h3>Gartenpflege</h3>
+              <p>Wir kümmern uns regelmässig um Ihren Garten. Sie geniessen ihn, wir halten ihn in Form.</p>
+            </div>
           </article>
         </div>
 
@@ -60,22 +71,37 @@
           Der Kunde muss bestätigen, welche davon wirklich angeboten werden.
           Nicht bestätigte Punkte vor dem Livegang löschen.
         -->
-        <h3 class="sub">Weitere mögliche Leistungen <span class="tag">Vorschlag, noch zu bestätigen</span></h3>
-        <ul class="list">
-          <li>Rasenpflege und Rasenneuanlage</li>
+        <h3 class="sub reveal">Weitere mögliche Leistungen <span class="tag">Vorschlag, noch zu bestätigen</span></h3>
+        <ul class="chips reveal">
+          <li>Rasenpflege</li>
           <li>Heckenschnitt</li>
           <li>Baum- und Strauchschnitt</li>
-          <li>Neu- und Umgestaltung von Beeten</li>
-          <li>Wege, Sitzplätze und Mauern</li>
-          <li>Saisonale Arbeiten und Gartenräumung</li>
+          <li>Beete neu gestalten</li>
+          <li>Wege und Sitzplätze</li>
+          <li>Saisonale Arbeiten</li>
         </ul>
+      </div>
+    </section>
+
+    <!--
+      ACHTUNG: Der Ablauf ist ein VORSCHLAG und muss vom Kunden bestätigt oder angepasst werden.
+    -->
+    <section id="ablauf" class="section dark">
+      <div class="wrap">
+        <p class="eyebrow reveal">So läuft es ab <span class="tag">Vorschlag</span></p>
+        <h2 class="reveal">In drei Schritten zum Garten</h2>
+        <ol class="steps">
+          <li class="reveal"><span class="step-no">1</span><h3>Anrufen oder schreiben</h3><p>Sie schildern kurz, was Sie sich wünschen.</p></li>
+          <li class="reveal"><span class="step-no">2</span><h3>Besichtigung vor Ort</h3><p>Wir schauen den Garten gemeinsam an und besprechen alles.</p></li>
+          <li class="reveal"><span class="step-no">3</span><h3>Offerte und Umsetzung</h3><p>Sie erhalten eine klare Offerte. Dann legen wir los.</p></li>
+        </ol>
       </div>
     </section>
 
     <section id="betrieb" class="section alt">
       <div class="wrap two-col">
-        <img src="img/betrieb.jpg" alt="Gartenbeet mit vielen verschiedenen Blumen" width="1600" height="1067" loading="lazy">
-        <div>
+        <img class="reveal" src="img/hero.jpg" alt="Gepflegter Garten mit Buchskugeln, Pflasterweg und Blumentöpfen" width="1200" height="795" loading="lazy">
+        <div class="reveal">
           <p class="eyebrow">Über den Betrieb</p>
           <h2>Gartenbau in Höngg</h2>
           <p>Pawi-Gartenbau ist ein Gartenbaubetrieb in Zürich Höngg. Der Betrieb bietet Planung und Pflege an.</p>
@@ -84,12 +110,29 @@
       </div>
     </section>
 
-    <section id="kontakt" class="section">
+    <!--
+      Allgemeines Gartenwissen, keine Aussage über den Betrieb.
+      Der Kunde kann den Abschnitt anpassen oder streichen.
+    -->
+    <section id="gartenjahr" class="section">
+      <div class="wrap">
+        <p class="eyebrow reveal">Das Gartenjahr</p>
+        <h2 class="reveal">Was wann ansteht</h2>
+        <div class="seasons">
+          <article class="season spring reveal"><h3>Frühling</h3><p>Beete vorbereiten, Rasen pflegen, Stauden teilen und neu pflanzen.</p></article>
+          <article class="season summer reveal"><h3>Sommer</h3><p>Giessen, Hecken schneiden, Unkraut im Zaum halten.</p></article>
+          <article class="season autumn reveal"><h3>Herbst</h3><p>Laub räumen, Zwiebeln setzen, Sträucher schneiden.</p></article>
+          <article class="season winter reveal"><h3>Winter</h3><p>Planen, Bäume auslichten, Neues für das nächste Jahr vorbereiten.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section contact-block">
       <div class="wrap contact">
-        <p class="eyebrow">Kontakt</p>
-        <h2>Jetzt anfragen</h2>
-        <p>Am einfachsten per Telefon oder E-Mail.</p>
-        <ul class="contact-list">
+        <p class="eyebrow reveal">Kontakt</p>
+        <h2 class="reveal">Jetzt anfragen</h2>
+        <p class="reveal">Am einfachsten per Telefon oder E-Mail.</p>
+        <ul class="contact-list reveal">
           <li><span>Telefon</span><a href="tel:+41443416066">044 341 60 66</a></li>
           <li><span>E-Mail</span><a href="mailto:pawi-gartenbau@bluewin.ch">pawi-gartenbau@bluewin.ch</a></li>
           <li><span>Adresse</span>
@@ -119,5 +162,27 @@
     </div>
   </footer>
 
+  <!-- Fester Anruf-Button, nur auf dem Handy sichtbar -->
+  <a class="call-fab" href="tel:+41443416066" aria-label="Pawi-Gartenbau anrufen">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+    Anrufen
+  </a>
+
+  <script>
+    // Sanftes Einblenden beim Scrollen
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function (e) { e.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
 </body>
 </html>
